@@ -1,7 +1,7 @@
 // Eerst kijken welke array methode is er nodig. in dit geval map.
 // Een map methode loopt hele 'inventory' array en roept voor elke object de callback (typeTV.type) functie aan.
 
-const typeTV = inventory.map ((typeTV) =>{
+const typeTV = inventory.map((typeTV) => {
     return typeTV.type
 });
 
@@ -16,13 +16,13 @@ const soldOutTV = inventory.filter((sold) => {
 
 console.log(soldOutTV)
 
-const yesToAmbiLight = inventory.filter((ambi)=>{
+const yesToAmbiLight = inventory.filter((ambi) => {
     return ambi.options.ambiLight === true
 });
 
 console.log(yesToAmbiLight);
 
-const price = inventory.sort((a,b)=> a.price -b.price)
+const price = inventory.sort((a, b) => a.price - b.price)
 
 console.log(inventory)
 

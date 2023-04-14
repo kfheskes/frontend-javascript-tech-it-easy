@@ -3,7 +3,7 @@
 
 let totalSold = 0;
 
-for (let i =0; i < inventory.length; i++) {
+for (let i = 0; i < inventory.length; i++) {
     totalSold += inventory[i].sold;
 }
 console.log(totalSold);
@@ -31,7 +31,7 @@ opdracht2b.textContent = totalSold;
 
 let totalBuy = 0;
 
-for (let i =0; i < inventory.length; i++) {
+for (let i = 0; i < inventory.length; i++) {
     totalBuy += inventory[i].originalStock;
 }
 console.log(totalBuy);
