@@ -29,13 +29,18 @@ console.log(result4b);
 
 // opdracht 4c
 // eerst een for loop genereren
+// omrekenen van inch naar cm, 1 inch is 2.54 cm
+// afronden naar een rond getal met Math.round
+// string schrijven in het aangegeven format
 
-function getSizes(sizes) {
-    for (let i = 0; i < inventory.length; i++) ;
-    return `${sizes.availableSizes}`
-}
+function getSizes(size) {
+    return size.map((size) => {
+        return `${size.availableSizes} inches (${size.availableSizes * 2.54 } cm) | `
+    }
+)}
 
-const result4c = getSizes
+
+const result4c = getSizes (inventory)
 console.log(result4c);
 
 
