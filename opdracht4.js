@@ -34,13 +34,40 @@ console.log(result4b);
 // string schrijven in het aangegeven format
 
 function getSizes(size) {
-    return size.map((size) => {
-        return `${size.availableSizes} inches (${size.availableSizes * 2.54 } cm) | `
-    }
-)}
-
+    return size.availableSizes.map((size) => {
+        return `${size.availableSizes} inches (${math.round (size.availableSizes * 2.54 )} cm)`
+    }).join('|')
+}
 
 const result4c = getSizes (inventory)
 console.log(result4c);
 
+// hij werkt helaas nog niet.
 
+
+// opdracht 4d
+
+const tv = inventory.find((tv) => tv.name === "43PUS6504/12");
+const name = getTVName(tv);
+const price = getPrice(tv);
+const screenSizes = getSizes(tv);
+
+const output = `${name} - 4K TV
+${price}
+${screenSizes}`;
+
+console.log(output);
+
+// opdracht 4e
+
+const output = inventory.map((tv) => {
+    const name = getTVName(tv);
+    const price = getPrice(tv);
+    const screenSizes = getSizes(tv);
+
+    return `${name} - 4K TV
+${price}
+${screenSizes}`;
+});
+
+console.log(output);
