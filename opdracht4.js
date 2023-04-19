@@ -14,8 +14,8 @@ function getTVName(tv) {
     return `${tv.brand} ${tv.type} - ${tv.name}`;
 }
 
-const tv = inventory[0];
-const result4a = getTVName(tv);
+const tv1 = inventory[0];
+const result4a = getTVName(tv1);
 console.log(result4a);
 
 // opdracht 4b
@@ -24,7 +24,7 @@ function getPrice(tv) {
     return `€ ${tv.price}, -`
 }
 
-const result4b = getPrice(tv);
+const result4b = getPrice;
 console.log(result4b);
 
 // opdracht 4c
@@ -35,11 +35,11 @@ console.log(result4b);
 
 function getSizes(size) {
     return size.availableSizes.map((size) => {
-        return `${size.availableSizes} inches (${math.round (size.availableSizes * 2.54 )} cm)`
+        return `${size.availableSizes} inches (${Math.round(size.availableSizes * 2.54)} cm)`
     }).join('|')
 }
 
-const result4c = getSizes (inventory)
+const result4c = getSizes(inventory)
 console.log(result4c);
 
 // hij werkt helaas nog niet.
@@ -52,11 +52,11 @@ const name = getTVName(tv);
 const price = getPrice(tv);
 const screenSizes = getSizes(tv);
 
-const output = `${name} - 4K TV
+const philips = `${name} - 4K TV
 ${price}
 ${screenSizes}`;
 
-console.log(output);
+console.log(philips);
 
 // opdracht 4e
 
