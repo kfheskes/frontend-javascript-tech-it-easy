@@ -65,7 +65,7 @@ const output = inventory.map((tv) => {
     const price = getPrice(tv);
     const screenSizes = getSizes(tv);
 
-    return `${name} - 4K TV
+    return `${name} 
 ${price}
 ${screenSizes}`;
 });
